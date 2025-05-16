@@ -1,0 +1,414 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #ffffff;
+}
+
+.nav-logo {
+  height: 40px;
+  width: 40px;
+}
+
+.navItem {
+  color: brown !important;
+  font-size: 21px !important;
+  font-weight: 400 !important;
+  padding-right: 15px !important;
+  transition: 0.5s ease;
+}
+
+.navItem:hover {
+  color: #ff5b38 !important;
+  border-top: 2px solid #ff5b38;
+  border-bottom: 2px solid #ff5b38;
+}
+
+.banner-container {
+  background-image: url("./images/chocolate-banner.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+.banner-container .banner-card {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  margin: 10px;
+}
+.banner-container .banner-card span {
+  color: #ff5b38;
+  font-size: 20px;
+  font-weight: 300;
+}
+.banner-container .banner-card .banner-heading {
+  color: #ffffff;
+  font-size: 85px;
+  font-family: "Charm", cursive;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+}
+.banner-container .banner-card .discover-btn {
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 200;
+  border: 5px solid #ff5b38;
+  height: 60px;
+  width: 200px;
+  background-color: transparent;
+  transition: 0.5s ease;
+  margin: 15px;
+}
+.banner-container .banner-card .discover-btn:hover {
+  background-color: #ff5b38;
+  color: #ffffff;
+}
+
+.carosual-container {
+  background-color: #f1ebe5;
+}
+.carosual-container .carosual-card {
+  padding: 50px;
+}
+
+.discover-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.discover-img {
+  height: 100%;
+  width: 100%;
+}
+
+.discover-text h1 {
+  font-family: "Charm", cursive;
+  color: brown;
+  font-size: 45px;
+  font-weight: 400;
+  padding-top: 15px;
+}
+.discover-text p {
+  font-size: 20px;
+  font-weight: 300;
+  margin: 10px;
+  letter-spacing: 2px;
+}
+.discover-text button {
+  margin: 10px;
+  height: 40px;
+  width: 130px;
+  border-style: none;
+  background-color: #ffffff;
+  color: brown;
+  transition: 0.5s ease;
+  font-weight: 200;
+}
+.discover-text button:hover {
+  background-color: brown;
+  color: #ffffff;
+}
+
+.product-heading {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  color: #ff5b38;
+  font-weight: 500;
+  font-size: 45px;
+}
+
+.choco-item-card {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.choco-item-card .choco-img-card {
+  border-radius: 100%;
+}
+.choco-item-card .choco-text-card {
+  border-top: 5px solid black;
+  margin-bottom: 10px;
+}
+.choco-item-card .choco-text-card h1 {
+  color: black;
+  font-weight: 600;
+  font-size: 35px;
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  letter-spacing: 2px;
+  transition: 0.5s ease;
+}
+.choco-item-card .choco-text-card span {
+  color: #ff5b38;
+  font-weight: 300;
+  font-size: 20px;
+}
+.choco-item-card .choco-text-card h1:hover {
+  color: #ff5b38;
+}
+.choco-item-card button {
+  margin: 10px;
+  height: 40px;
+  width: 130px;
+  border-style: none;
+  background-color: #ffffff;
+  color: brown;
+  transition: 0.5s ease;
+  font-weight: 200;
+}
+.choco-item-card button:hover {
+  background-color: brown;
+  color: #ffffff;
+}
+
+.team-body {
+  background-color: #f8f7f3;
+}
+
+.team-heading-card h1 {
+  font-size: 80px;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  padding: 15px;
+}
+.team-heading-card p {
+  font-size: 20px;
+  font-weight: 200;
+  letter-spacing: 2px;
+  padding: 20px;
+  text-align: justify;
+}
+
+.our-team-member-1 {
+  background-image: url("./images/chef\ 1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 320px;
+}
+.our-team-member-1 .our-team-member-card {
+  background-color: #ffffff;
+  margin: 15px;
+}
+.our-team-member-1 .our-team-member-card h1 {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-size: 20px;
+  letter-spacing: 2px;
+  padding-left: 15px;
+  padding-top: 5px;
+}
+.our-team-member-1 .our-team-member-card span {
+  color: #ff5b38;
+  font-size: 15px;
+  font-weight: 200;
+  letter-spacing: 2px;
+  padding-left: 15px;
+  padding-bottom: 10px;
+}
+
+.our-team-member-2 {
+  background-image: url("./images/chef\ 2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 320px;
+}
+.our-team-member-2 .our-team-member-card {
+  background-color: #ffffff;
+  margin: 15px;
+}
+.our-team-member-2 .our-team-member-card h1 {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-size: 20px;
+  letter-spacing: 2px;
+  padding-left: 15px;
+  padding-top: 5px;
+}
+.our-team-member-2 .our-team-member-card span {
+  color: #ff5b38;
+  font-size: 15px;
+  font-weight: 200;
+  letter-spacing: 2px;
+  padding-left: 15px;
+  padding-bottom: 10px;
+}
+
+.certificate-img {
+  height: 100%;
+  width: 100%;
+}
+
+.certificate-box {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 7px solid black;
+  height: 100%;
+}
+.certificate-box h1 {
+  font-size: 85px;
+  text-align: center;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+.certificate-box p {
+  font-size: 13px;
+  font-weight: 200;
+  text-align: center;
+  margin-top: 15px;
+}
+.certificate-box button {
+  font-weight: 100;
+  border-style: none;
+  background-color: #ffffff;
+  padding-bottom: 5px;
+  letter-spacing: 2px;
+  border-bottom: 3px solid #ff5b38;
+  margin-top: 20px;
+  transition: 0.5s ease;
+}
+.certificate-box button:hover {
+  color: #ff5b38;
+}
+
+.about-para {
+  font-size: 15px;
+  font-weight: lighter;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+.signature {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20%;
+  margin-bottom: 10px;
+}
+
+.co-founder {
+  font-size: 15px;
+  font-weight: lighter;
+  letter-spacing: 2px;
+  text-align: center;
+  color: gray;
+}
+
+.contact-slogan-box {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  height: 100%;
+}
+.contact-slogan-box p {
+  color: brown;
+  font-weight: 200;
+  letter-spacing: 2px;
+  text-align: justify;
+}
+
+.contact-us-heading {
+  color: #ff5b38;
+  font-family: 60px;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+
+.message-box {
+  background-color: #ffffff;
+  border-left: 2px solid brown;
+  border-right: 2px solid brown;
+  padding: 35px;
+}
+.message-box .inputs {
+  border: 2px solid lightgrey;
+}
+.message-box .error-msg {
+  color: #ff2800;
+  font-size: 11px;
+  font-weight: 300;
+  letter-spacing: 2px;
+}
+.message-box .lable-item {
+  color: brown;
+  letter-spacing: 2px;
+  font-weight: 200;
+}
+.message-box .submit-btn {
+  margin: 10px;
+  height: 40px;
+  width: 130px;
+  border-style: none;
+  background-color: #ffffff;
+  color: brown;
+  transition: 0.5s ease;
+  font-weight: 200;
+  border-bottom: 3px solid brown;
+}
+.message-box .submit-btn:hover {
+  background-color: brown;
+  color: #ffffff;
+}
+.message-box .inputs:hover {
+  border: 2px solid #ff5b38;
+}
+
+.contact-card {
+  text-align: center;
+}
+.contact-card h1 {
+  font-size: 15px;
+  font-weight: 100;
+  letter-spacing: 2px;
+}
+.contact-card span {
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: 2px;
+}
+
+.icons {
+  font-size: 25px;
+  color: lightgray;
+  padding: 15px;
+  margin-bottom: 15px;
+  transition: 0.5s ease;
+}
+
+.icons:hover {
+  color: #ff5b38;
+}
+
+.copy-right {
+  font-size: 15px;
+  font-weight: 200;
+  letter-spacing: 2px;
+  text-align: center;
+  color: lightgrey;
+}
+
+.copy-right:hover {
+  color: #ff5b38;
+}/*# sourceMappingURL=style.css.map */
