@@ -1,0 +1,433 @@
+$primary-color: #ff5b38;
+$paragraph-size: 20px;
+$letter-spacing: 2px;
+$white-color: #ffffff;
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: $white-color;
+} 
+
+
+.nav-logo {
+    height: 40px;
+    width: 40px;
+}
+
+.navItem{
+    color: brown !important;
+    font-size: 21px !important;
+    font-weight: 400 !important;
+    padding-right: 15px !important;
+    transition: .5s ease;
+}
+
+.navItem:hover{
+    color: $primary-color !important;
+    border-top: 2px solid $primary-color;
+    border-bottom: 2px solid $primary-color;
+}
+
+
+@mixin bannerCenter(){
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.banner-container {
+    background-image: url("./images/chocolate-banner.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    @include bannerCenter();
+    .banner-card {
+        @include bannerCenter();
+        margin: 10px;
+        span {
+            color: $primary-color;
+            font-size: 20px;
+            font-weight: 300;
+        }
+        .banner-heading{
+            color: $white-color;
+            font-size: 85px;
+            font-family:  "Charm", cursive;
+            font-optical-sizing: auto;
+            font-weight: 800;
+            font-style: normal;
+            
+        }
+        .discover-btn {
+            color: $white-color;
+            font-size: 18px;
+            font-weight: 200;
+            border: 5px solid $primary-color;
+            height: 60px;
+            width: 200px;
+            background-color: transparent;
+            transition: .5s ease;
+            margin: 15px;
+        }
+        .discover-btn:hover {
+            background-color: $primary-color;
+            color: $white-color;
+        }
+    }
+    
+}
+
+
+// Carosual Container
+.carosual-container {
+    background-color: #f1ebe5;
+    .carosual-card{
+        padding: 50px;
+    }
+}
+
+
+// Discover Container
+.discover-container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.discover-img {
+    height: 100%;
+    width: 100%;
+}
+
+@mixin discoverProductMsgBtn(){
+    margin: 10px;
+    height: 40px;
+    width: 130px;
+    border-style: none;
+    background-color: $white-color;
+    color: brown;
+    transition: .5s ease;
+    font-weight: 200;
+}
+
+@mixin discoverProductMsgBtnHover(){
+    background-color: brown;
+    color: $white-color;
+}
+
+.discover-text {
+    h1{
+        font-family: "Charm", cursive;
+        color: brown;
+        font-size: 45px;
+        font-weight: 400;
+        padding-top: 15px;
+    }
+    p{
+        font-size: $paragraph-size;
+        font-weight: 300;
+        margin: 10px;
+        letter-spacing: $letter-spacing;
+    }
+    button {
+        @include discoverProductMsgBtn();
+    }
+    button:hover{
+        @include discoverProductMsgBtnHover();
+    }
+}
+
+
+// Products Container
+.product-heading {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: $primary-color;
+    font-weight: 500;
+    font-size: 45px;
+}
+.choco-item-card{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    .choco-img-card{
+        border-radius: 100%;
+    }
+    .choco-text-card{
+        border-top: 5px solid black;
+        margin-bottom: 10px;
+        h1{
+            color: black;
+            font-weight: 600;
+            font-size: 35px;
+            font-family: "Roboto", sans-serif;
+            font-optical-sizing: auto;
+            font-style: normal;
+            letter-spacing: $letter-spacing;
+            transition: .5s ease;
+        }
+        span{
+            color: $primary-color;
+            font-weight: 300;
+            font-size: 20px;
+        }
+        h1:hover{
+            color: $primary-color;
+        }
+    }
+    button{
+        @include discoverProductMsgBtn();
+    }
+    button:hover{
+        @include discoverProductMsgBtnHover();
+    }
+}
+
+// Our Team
+.team-body {
+    background-color: #f8f7f3;
+}
+
+.team-heading-card{
+    h1{
+        font-size: 80px;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        padding: 15px;
+    }
+    p{
+        font-size: $paragraph-size;
+        font-weight: 200;
+        letter-spacing: $letter-spacing;
+        padding: 20px;
+        text-align: justify;
+    }
+}
+
+@mixin teamMemberContainer(){
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 320px;
+}
+
+
+@mixin teamMemberCard(){
+    background-color: $white-color;
+    margin: 15px;
+}
+
+@mixin memberName(){
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-size: 20px;
+    letter-spacing: $letter-spacing;
+    padding-left: 15px;
+    padding-top: 5px;
+}
+
+@mixin memberJob(){
+    color: $primary-color;
+    font-size: 15px;
+    font-weight: 200;
+    letter-spacing: $letter-spacing;
+    padding-left: 15px;
+    padding-bottom: 10px;
+}
+
+.our-team-member-1 {
+        background-image: url("./images/chef\ 1.jpg");
+        @include teamMemberContainer();
+    .our-team-member-card{
+        @include teamMemberCard();
+        h1{
+            @include memberName();
+        }
+        span{
+            @include memberJob();
+        }
+    }
+}
+
+
+.our-team-member-2 {
+    background-image: url("./images/chef\ 2.jpg");
+    @include teamMemberContainer();
+.our-team-member-card{
+    @include teamMemberCard();
+    h1{
+        @include memberName();
+    }
+    span{
+        @include memberJob();
+    }
+}
+}
+
+
+// Certificate Container
+.certificate-img {
+    height: 100%;
+    width: 100%;
+}
+.certificate-box {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 7px solid black;
+    height: 100%;
+    h1{
+        font-size: 85px;
+        text-align: center;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+    p{
+        font-size: 13px;
+        font-weight: 200;
+        text-align: center;
+        margin-top: 15px;
+    }
+    button{
+        font-weight: 100;
+        border-style: none;
+        background-color: $white-color;
+        padding-bottom: 5px;
+        letter-spacing: $letter-spacing;
+        border-bottom: 3px solid $primary-color;
+        margin-top: 20px;
+        transition: .5s ease;
+    }
+    button:hover{
+        color: $primary-color;
+    }
+}
+
+// Co-Founder Container
+@mixin about-content(){
+    font-size: 15px;
+    font-weight: lighter;
+    letter-spacing: $letter-spacing;
+    text-align: center;
+}
+.about-para {
+    @include about-content();
+}
+.signature {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
+    margin-bottom: 10px;
+}
+
+.co-founder{
+    @include about-content();
+    color: gray;
+}
+
+// Message Container
+.contact-slogan-box {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    height: 100%;
+    p{
+        color: brown;
+        font-weight: 200;
+        letter-spacing: $letter-spacing;
+        text-align: justify;
+    }
+}
+
+.contact-us-heading{
+    color: #ff5b38;
+    font-family: 60px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.message-box {
+    background-color: $white-color;
+    border-left: 2px solid brown;
+    border-right: 2px solid brown;
+    padding: 35px;
+    .inputs{
+        border: 2px solid lightgrey;
+    }
+    .error-msg{
+        color: #ff2800;
+        font-size: 11px;
+        font-weight: 300;
+        letter-spacing: $letter-spacing;
+    }
+    .lable-item{
+        color: brown;
+        letter-spacing: $letter-spacing;
+        font-weight: 200;
+    }
+    .submit-btn{
+        @include discoverProductMsgBtn();
+        border-bottom: 3px solid brown;
+    }
+    .submit-btn:hover{
+        @include discoverProductMsgBtnHover();
+    }
+
+    .inputs:hover{
+        border: 2px solid $primary-color;
+    }
+}
+
+
+// Contact Container
+.contact-card{
+    text-align: center;
+    h1{
+        font-size: 15px;
+        font-weight: 100;
+        letter-spacing: 2px;
+    }
+    span{
+        font-size: 15px;
+        font-weight: 500;
+        letter-spacing: 2px;
+    }
+}
+
+// Social Media Container
+.icons{
+    font-size: 25px;
+    color: lightgray;
+    padding: 15px;
+    margin-bottom: 15px;
+    transition: .5s ease;
+}
+
+.icons:hover{
+    color: $primary-color;
+}
+.copy-right{
+    font-size: 15px;
+    font-weight: 200;
+    letter-spacing: $letter-spacing;
+    text-align: center;
+    color: lightgrey;
+}
+
+.copy-right:hover{
+    color: $primary-color;
+}
